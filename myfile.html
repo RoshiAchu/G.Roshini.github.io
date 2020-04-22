@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My first HTML</title>
+	<style>
+			label{display:inline-block;width:240px;}
+			div{margin-left:30px;}
+		</style>
+</head>
+<body>
+	<div>
+<form id="as">
+	<h1><center>BIODATA</center></h1>
+	<label>Name:</label>
+	<input type="text" placeholder="Enter name" id="name"><br>
+	<label>Age:</label>
+	<input type="number" name="age" maxlength="3" placeholder="Enter Age"><br>
+	<label>Father's Name:</label>
+    <input type="text" name="father" placeholder="Enter Father's Name"><br>
+    <label>Date of Birth:</label>
+    <input type="date" name="dob"><br>
+    <label>Address:</label>
+   <textarea rows="4" cols="50" placeholder="Enter Address"></textarea><br>
+   <label>Contact:</label>
+   <input type="tel" name="phone" placeholder="Enter 10-digit phone number"><br>
+  <center><input type="submit" onclick="disp()"/><center>
+</form>
+</div>
+<script>
+function disp(){
+var d=document.getElementById("name").value;
+document.getElementById("as").innerHTML="<center>Welcome "+d+"<br>Your form has been submitted successfully</center>";
+}
+</script>
+</body>
+</html>
